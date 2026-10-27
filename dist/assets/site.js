@@ -7,6 +7,16 @@ export function whatsappUrl(name, grade, comment = '') {
   return `https://wa.me/971506136091?text=${encodeURIComponent(message)}`;
 }
 
+export function scrollProgress(offset, distance) {
+  return Math.min(1, Math.max(0, offset / Math.max(1, distance)));
+}
+export function scrollMotion(scrollY, fadeDistance, sectionTop, sectionHeight, viewportHeight) {
+  return {
+    opacity: 1 - scrollProgress(scrollY, fadeDistance),
+    flagOffset: (scrollProgress(scrollY + viewportHeight - sectionTop, sectionHeight + viewportHeight) - .5) * 40
+  };
+}
+
 if (typeof document !== 'undefined') {
   const menu = document.querySelector('[data-menu]');
   const navigation = document.querySelector('#navigation');
@@ -81,10 +91,62 @@ if (typeof document !== 'undefined') {
     if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') { event.preventDefault(); displayPhoto(currentPhoto + (event.key === 'ArrowRight' ? 1 : -1)); }
   });
 
-  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const brand = document.querySelector('[data-brand-fade]');
+  const community = document.querySelector('[data-community]');
+  const flags = [...document.querySelectorAll('[data-flag]')];
+  if (brand || community) {
+    let frame = 0, previousTime = 0, smoothScroll = window.scrollY;
+    let fadeDistance = 1, communityTop = 0, communityHeight = 1;
+    function readLayout() {
+      const headerHeight = document.querySelector('.site-header').offsetHeight;
+      fadeDistance = brand ? Math.max(1, brand.parentElement.getBoundingClientRect().top + window.scrollY + brand.offsetHeight - headerHeight) : 1;
+      communityTop = community ? community.getBoundingClientRect().top + window.scrollY : 0;
+      communityHeight = community?.offsetHeight || 1;
+    }
+    function draw(time) {
+      frame = 0;
+      if (reducedMotion.matches) return;
+      const elapsed = previousTime ? Math.min(64, time - previousTime) : 16;
+      previousTime = time;
+      smoothScroll += (window.scrollY - smoothScroll) * (1 - Math.exp(-elapsed / 240));
+      const state = scrollMotion(window.scrollY, fadeDistance, communityTop, communityHeight, window.innerHeight);
+      if (brand) {
+        brand.style.opacity = state.opacity;
+        brand.style.transform = `translateY(${-18 * (1 - state.opacity)}px)`;
+      }
+      if (window.scrollY + window.innerHeight > communityTop && window.scrollY < communityTop + communityHeight) {
+        const drift = scrollMotion(smoothScroll, fadeDistance, communityTop, communityHeight, window.innerHeight).flagOffset;
+        flags.forEach(flag => flag.style.setProperty('--flag-drift', `${drift * Number(flag.dataset.speed)}px`));
+      }
+      if (Math.abs(window.scrollY - smoothScroll) > .1) frame = requestAnimationFrame(draw);
+      else previousTime = 0;
+    }
+    function schedule() { if (!frame && !reducedMotion.matches) frame = requestAnimationFrame(draw); }
+    function resetMotion() {
+      cancelAnimationFrame(frame); frame = 0; previousTime = 0; smoothScroll = window.scrollY;
+      brand?.style.removeProperty('opacity'); brand?.style.removeProperty('transform');
+      flags.forEach(flag => flag.style.removeProperty('--flag-drift'));
+      if (reducedMotion.matches) document.getAnimations().forEach(animation => animation.cancel());
+      readLayout(); schedule();
+    }
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', () => { readLayout(); schedule(); }, { passive: true });
+    window.addEventListener('load', () => { readLayout(); schedule(); }, { once: true });
+    document.fonts.ready.then(() => { readLayout(); schedule(); });
+    reducedMotion.addEventListener('change', resetMotion);
+    readLayout(); schedule();
+  }
+
+  if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => entries.forEach(entry => {
-      if (entry.isIntersecting) { entry.target.animate([{opacity:0,transform:'translateY(16px)'},{opacity:1,transform:'translateY(0)'}],{duration:450,easing:'ease-out'}); observer.unobserve(entry.target); }
+      if (!entry.isIntersecting) return;
+      if (!reducedMotion.matches) {
+        const index = [...entry.target.parentElement.children].indexOf(entry.target);
+        entry.target.animate([{opacity:0,transform:'translateY(16px)'},{opacity:1,transform:'translateY(0)'}],{duration:500,delay:(index % 4) * 55,easing:'cubic-bezier(.2,.65,.3,1)',fill:'backwards'});
+      }
+      observer.unobserve(entry.target);
     }), { threshold: 0.08 });
-    document.querySelectorAll('[data-reveal]').forEach(element => observer.observe(element));
+    document.querySelectorAll('[data-reveal],.section-heading,.teacher-card,.document-row').forEach(element => observer.observe(element));
   }
 }

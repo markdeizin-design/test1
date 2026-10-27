@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import {normalize,matchesTeacher,whatsappUrl} from './dist/assets/site.js';
+import vm from 'node:vm';
+import {normalize,matchesTeacher,whatsappUrl,scrollProgress,scrollMotion} from './dist/assets/site.js';
 const root=import.meta.dirname;
 const data=JSON.parse(fs.readFileSync(path.join(root,'content.json'),'utf8'));
 const pages=JSON.parse(fs.readFileSync(path.join(root,'pages.json'),'utf8'));
@@ -21,6 +22,46 @@ assert.equal(message.hostname,'wa.me');
 assert.equal(message.pathname,'/971506136091');
 assert.equal(message.searchParams.get('text'),'Здравствуйте! Меня зовут Анна & Иван. Интересует поступление: KG1.\nПереезд & документы?');
 assert.equal(new URL(whatsappUrl('Анна','1 класс')).searchParams.get('text').endsWith('.'),true);
+assert.equal(scrollProgress(-100,300),0);
+assert.equal(scrollProgress(150,300),.5);
+assert.equal(scrollProgress(900,300),1);
+assert.equal(scrollProgress(0,0),0);
+assert.equal(scrollMotion(0,400,1200,500,800).opacity,1);
+assert.equal(scrollMotion(200,400,1200,500,800).opacity,.5);
+assert.equal(scrollMotion(600,400,1200,500,800).opacity,0);
+assert.equal(scrollMotion(0,400,1200,500,800).flagOffset,-20);
+assert.equal(scrollMotion(1050,400,1200,500,800).flagOffset,0);
+assert.equal(scrollMotion(1800,400,1200,500,800).flagOffset,20);
+assert.equal((home.match(/data-flag /g)||[]).length,11);
+assert(home.includes('data-brand-fade'));
+assert(home.includes('в нашей школе учатся дети самых разных национальностей'));
+assert(!home.includes('opacity:0'));
+assert(home.includes('class="community-flags" aria-hidden="true"'));
+for(const code of ['ru','by','kz','uz','kg','tj','az','am','tm','ua','lt'])assert(fs.existsSync(path.join(root,'dist/assets/flags',code+'.svg')));
+
+// Reduced motion must leave the brand visible and never start a scroll animation loop.
+const style=()=>({setProperty(){},removeProperty(){}});
+const brand={style:style(),offsetHeight:250,parentElement:{getBoundingClientRect:()=>({top:100})}};
+const community={offsetHeight:500,getBoundingClientRect:()=>({top:1200})};
+const preference={matches:true,addEventListener(event,listener){this.listener=listener;}};
+let requestedFrames=0,cancelledAnimations=0;
+const fakeDocument={
+  querySelector:selector=>selector==='[data-brand-fade]'?brand:selector==='[data-community]'?community:selector==='.site-header'?{offsetHeight:80}:null,
+  querySelectorAll:selector=>selector==='[data-flag]'?[{style:style(),dataset:{speed:1}}]:[],
+  addEventListener(){},fonts:{ready:Promise.resolve()},getAnimations:()=>[{cancel(){cancelledAnimations++;}}]
+};
+vm.runInNewContext(fs.readFileSync(path.join(root,'dist/assets/site.js'),'utf8').replace(/^export /gm,''),{
+  document:fakeDocument,window:{scrollY:0,innerHeight:800,matchMedia:()=>preference,addEventListener(){}},
+  requestAnimationFrame(){requestedFrames++;return 1;},cancelAnimationFrame(){}
+});
+await Promise.resolve();
+assert.equal(requestedFrames,0);
+assert.equal(brand.style.opacity,undefined);
+preference.matches=false;preference.listener();
+assert.equal(requestedFrames,1);
+preference.matches=true;preference.listener();
+assert.equal(requestedFrames,1);
+assert.equal(cancelledAnimations,1);
 for(const p of pages){
   const file=path.join(root,'dist',p.route.slice(1),'index.html');
   const html=fs.readFileSync(file,'utf8');
