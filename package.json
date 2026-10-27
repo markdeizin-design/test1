@@ -1,0 +1,10 @@
+{
+  "name": "russian-school-dubai",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test.mjs",
+    "dev": "node serve.mjs"
+  }
+}

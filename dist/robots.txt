@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://russian-school-dubai-271026.fluffyauk21.chatgpt.site/sitemap.xml

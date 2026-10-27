@@ -1,0 +1,1027 @@
+{
+  "people": [
+    {
+      "name": "Халикова Марина Борисовна",
+      "role": "Директор школы",
+      "fullRole": "Директор Школы",
+      "education": "Ленинградский государственный университет им. А.А. Жданова, факультет востоковедения.",
+      "source": "https://dubairuschool.com/professor/khalikova-marina-borisovna",
+      "slug": "khalikova-marina-borisovna",
+      "group": "administration",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/halikova.jpg",
+      "image": {
+        "src": "/assets/person-khalikova-marina-borisovna.webp",
+        "width": 384,
+        "height": 576,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/halikova.jpg"
+      }
+    },
+    {
+      "name": "Лисичкина Наталья Викторовна",
+      "role": "Заместитель директора",
+      "fullRole": "Заместитель директора школы.",
+      "education": "Казанский государственный педагогический университет, факультет иностранных языков.",
+      "source": "https://dubairuschool.com/professor/lisichkina-natalya-viktorovna",
+      "slug": "lisichkina-natalya-viktorovna",
+      "group": "administration",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/lisichkina_natalya_viktorovna.jpg",
+      "image": {
+        "src": "/assets/person-lisichkina-natalya-viktorovna.webp",
+        "width": 198,
+        "height": 279,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/lisichkina_natalya_viktorovna.jpg"
+      }
+    },
+    {
+      "name": "Ященко Светлана Вячеславовна",
+      "role": "Заместитель директора по учебной работе; информатика",
+      "fullRole": "Заместитель директора по учебной работе/Руководитель МО учителей дисциплин математического цикла и информатики/Учитель информатики.",
+      "education": "Кыргызский государственный педагогический университет им. И. Арабаева, преподаватель информатики. yashenko@dubairuschool.com",
+      "source": "https://dubairuschool.com/professor/yashchenko-svetlana-vyacheslavovna",
+      "slug": "yashchenko-svetlana-vyacheslavovna",
+      "group": "administration",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/yashchenko.jpg",
+      "image": {
+        "src": "/assets/person-yashchenko-svetlana-vyacheslavovna.webp",
+        "width": 383,
+        "height": 523,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/yashchenko.jpg"
+      }
+    },
+    {
+      "name": "Шкнай Галина Владимировна",
+      "role": "Председатель методического совета; координатор детей с ООП; русский язык и литература",
+      "fullRole": "Председатель Методического Совета/Координатор детей с ООП/Руководитель МО учителей дисциплин гуманитарного цикла/Учитель русского языка и литературы.",
+      "education": "Белорусский государственный университет им. В.И. Ленина, филолог, преподаватель русского языка и литературы. Кандидат филологических наук. shknay@dubairuschool.com",
+      "source": "https://dubairuschool.com/professor/shknay-galina-vladimirovna",
+      "slug": "shknay-galina-vladimirovna",
+      "group": "administration",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/shknay_0.jpg",
+      "image": {
+        "src": "/assets/person-shknay-galina-vladimirovna.webp",
+        "width": 357,
+        "height": 535,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/shknay_0.jpg"
+      }
+    },
+    {
+      "name": "Алия Мадани",
+      "role": "Арабский секретарь",
+      "fullRole": "Арабский секретарь.",
+      "education": "Computer College (UAE), information technology. aliya.madani@dubairuschool.com",
+      "source": "https://dubairuschool.com/professor/aliya-madani",
+      "slug": "aliya-madani",
+      "group": "administration",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/aliya_madani.jpg",
+      "image": {
+        "src": "/assets/person-aliya-madani.webp",
+        "width": 278,
+        "height": 345,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/aliya_madani.jpg"
+      }
+    },
+    {
+      "name": "Киселёва Александра Александровна",
+      "role": "Администратор",
+      "fullRole": "Администратор.",
+      "education": "Новосибирская академия водного транспорта.",
+      "source": "https://dubairuschool.com/professor/kiselyova-aleksandra-aleksandrovna",
+      "slug": "kiselyova-aleksandra-aleksandrovna",
+      "group": "administration",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/kiseleva.jpg",
+      "image": {
+        "src": "/assets/person-kiselyova-aleksandra-aleksandrovna.webp",
+        "width": 229,
+        "height": 304,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/kiseleva.jpg"
+      }
+    },
+    {
+      "name": "Полякова Татьяна Петровна",
+      "role": "Администратор",
+      "fullRole": "Администратор.",
+      "education": "Национальный университет Узбекистана им. М. Улугбека, менеджмент малого и среднего бизнеса.",
+      "source": "https://dubairuschool.com/professor/polyakova-tatyana-petrovna",
+      "slug": "polyakova-tatyana-petrovna",
+      "group": "administration",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/polyakova_tatyana_petrovna.jpg",
+      "image": {
+        "src": "/assets/person-polyakova-tatyana-petrovna.webp",
+        "width": 400,
+        "height": 543,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/polyakova_tatyana_petrovna.jpg"
+      }
+    },
+    {
+      "name": "Кулешова Ольга Евгеньевна",
+      "role": "IT администратор",
+      "fullRole": "IT администратор.",
+      "education": "Белорусская государственная политехническая академия, преподаватель технологии и информатики. kuliashova@dubairuschool.com",
+      "source": "https://dubairuschool.com/professor/kuleshova-olga-evgenevna",
+      "slug": "kuleshova-olga-evgenevna",
+      "group": "administration",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/kuleshova_0.jpg",
+      "image": {
+        "src": "/assets/person-kuleshova-olga-evgenevna.webp",
+        "width": 376,
+        "height": 547,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/kuleshova_0.jpg"
+      }
+    },
+    {
+      "name": "Наджиб Ирина Викторовна",
+      "role": "Школьный психолог",
+      "fullRole": "Школьный психолог",
+      "education": "Волгоградская медицинская академия.",
+      "source": "https://dubairuschool.com/professor/nadzhib-irina-viktorovna",
+      "slug": "nadzhib-irina-viktorovna",
+      "group": "support",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/nadzhib.jpg",
+      "image": {
+        "src": "/assets/person-nadzhib-irina-viktorovna.webp",
+        "width": 382,
+        "height": 569,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/nadzhib.jpg"
+      }
+    },
+    {
+      "name": "Абдельхалим Милена Евгеньевна",
+      "role": "История, обществознание, ОБЖ, ИЗО и художественный труд",
+      "fullRole": "Руководитель МО художественного, эстетического и физического воспитания/Учитель истории, обществознания и ОБЖ/Учитель ИЗО и художественного труда.",
+      "education": "Кыргызский государственный университет, преподаватель истории и обществознания. milena.elkhalima@dubairuschool.com",
+      "source": "https://dubairuschool.com/professor/abdelhalim-milena-evgenevna",
+      "slug": "abdelhalim-milena-evgenevna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/abdelhalim_0.jpg",
+      "image": {
+        "src": "/assets/person-abdelhalim-milena-evgenevna.webp",
+        "width": 383,
+        "height": 528,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/abdelhalim_0.jpg"
+      }
+    },
+    {
+      "name": "Алия Садык",
+      "role": "Учитель арабского языка",
+      "fullRole": "Учитель арабского языка.",
+      "education": "Ajman University of Science (ОАЭ), бакалавр английского языка и технологии.",
+      "source": "https://dubairuschool.com/professor/aliya-sadyk",
+      "slug": "aliya-sadyk",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/aliya_sadyk.jpg",
+      "image": {
+        "src": "/assets/person-aliya-sadyk.webp",
+        "width": 446,
+        "height": 655,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/aliya_sadyk.jpg"
+      }
+    },
+    {
+      "name": "Аль-Тук Ирина Викторовна",
+      "role": "Учитель музыки; Учитель истории религий",
+      "fullRole": "Учитель музыки/Учитель истории религий.",
+      "education": "Государственное Музыкальное училище им. Гнесиных, преподаватель ДМШ и концертмейстер. altouq@dubairuschool.com",
+      "source": "https://dubairuschool.com/professor/al-tuk-irina-viktorovna",
+      "slug": "al-tuk-irina-viktorovna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/al-tuk.jpg",
+      "image": {
+        "src": "/assets/person-al-tuk-irina-viktorovna.webp",
+        "width": 383,
+        "height": 528,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/al-tuk.jpg"
+      }
+    },
+    {
+      "name": "Амира Агха",
+      "role": "Учитель арабского языка",
+      "fullRole": "Учитель арабского языка.",
+      "education": "ZagazigUniversity (Египет), бакалавр востоковедения.",
+      "source": "https://dubairuschool.com/professor/amira-agha",
+      "slug": "amira-agha",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/agha.jpg",
+      "image": {
+        "src": "/assets/person-amira-agha.webp",
+        "width": 220,
+        "height": 288,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/agha.jpg"
+      }
+    },
+    {
+      "name": "Асмаа Мохамед",
+      "role": "Учитель арабского языка и ислама",
+      "fullRole": "Учитель арабского языка и ислама.",
+      "education": "Al Monofia University (Египет), учитель арабского языка и ислама.",
+      "source": "https://dubairuschool.com/professor/asmaa-mohamed",
+      "slug": "asmaa-mohamed",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/asmaa_mohamed.jpg",
+      "image": {
+        "src": "/assets/person-asmaa-mohamed.webp",
+        "width": 431,
+        "height": 586,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/asmaa_mohamed.jpg"
+      }
+    },
+    {
+      "name": "Ахлам Тухами",
+      "role": "Учитель арабского языка",
+      "fullRole": "Учитель арабского языка.",
+      "education": "Mentouri Constantine University (Алжир).",
+      "source": "https://dubairuschool.com/professor/ahlam-tuhami",
+      "slug": "ahlam-tuhami",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/ahlam_tuhami.jpg",
+      "image": {
+        "src": "/assets/person-ahlam-tuhami.webp",
+        "width": 432,
+        "height": 555,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/ahlam_tuhami.jpg"
+      }
+    },
+    {
+      "name": "Воробей Елена Сергеевна",
+      "role": "Учитель химии и биологии",
+      "fullRole": "Учитель химии и биологии.",
+      "education": "Российский государственный педагогический университет им. А.И. Герцена, учитель химии.",
+      "source": "https://dubairuschool.com/professor/vorobey-elena-sergeevna",
+      "slug": "vorobey-elena-sergeevna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/vorobey_elena_sergeevna.jpg",
+      "image": {
+        "src": "/assets/person-vorobey-elena-sergeevna.webp",
+        "width": 251,
+        "height": 340,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/vorobey_elena_sergeevna.jpg"
+      }
+    },
+    {
+      "name": "Галеева Наталья Валерьевна",
+      "role": "Учитель биологии; Ассистент школьного психолога",
+      "fullRole": "Учитель биологии/Ассистент школьного психолога.",
+      "education": "Елабужский государственный педагогический институт, учитель биологии.",
+      "source": "https://dubairuschool.com/professor/galeeva-natalya-valerevna",
+      "slug": "galeeva-natalya-valerevna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/galeeva.jpg",
+      "image": {
+        "src": "/assets/person-galeeva-natalya-valerevna.webp",
+        "width": 236,
+        "height": 314,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/galeeva.jpg"
+      }
+    },
+    {
+      "name": "Глямшина Иркем Равильевна",
+      "role": "Учитель географии; Учитель ИЗО",
+      "fullRole": "Учитель географии/Учитель ИЗО.",
+      "education": "Мордовский государственный университет им. Н.П. Огарёва, учитель географии.",
+      "source": "https://dubairuschool.com/professor/glyamshina-irkem-ravilevna",
+      "slug": "glyamshina-irkem-ravilevna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/glyamshina_irkem_ravilevna.jpg",
+      "image": {
+        "src": "/assets/person-glyamshina-irkem-ravilevna.webp",
+        "width": 200,
+        "height": 273,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/glyamshina_irkem_ravilevna.jpg"
+      }
+    },
+    {
+      "name": "Дембицка Наталья Богдановна",
+      "role": "Учитель начальных классов",
+      "fullRole": "Учитель начальных классов.",
+      "education": "Тернопольский государственный педагогический университет им. В.Гнатюка, преподаватель начальных классов, практическая психология. dembitska@dubairuschool.com",
+      "source": "https://dubairuschool.com/professor/dembicka-natalya-bogdanovna",
+      "slug": "dembicka-natalya-bogdanovna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/dembicka.jpg",
+      "image": {
+        "src": "/assets/person-dembicka-natalya-bogdanovna.webp",
+        "width": 381,
+        "height": 504,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/dembicka.jpg"
+      }
+    },
+    {
+      "name": "Долинина Анна Алексеевна",
+      "role": "Учитель физкультуры; Учитель танцев",
+      "fullRole": "Учитель физкультуры/Учитель танцев.",
+      "education": "Кубанский государственный университет физической культуры, спорта и туризма, учитель физической культуры.",
+      "source": "https://dubairuschool.com/professor/dolinina-anna-alekseevna",
+      "slug": "dolinina-anna-alekseevna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/dolinina_0.jpg",
+      "image": {
+        "src": "/assets/person-dolinina-anna-alekseevna.webp",
+        "width": 381,
+        "height": 516,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/dolinina_0.jpg"
+      }
+    },
+    {
+      "name": "Допира Владимир Тарасович",
+      "role": "Учитель математики",
+      "fullRole": "Учитель математики.",
+      "education": "Луцкий Государственный пединститут им. Леси Украинки, преподаватель математики и физики. dopira@dubairuschool.com",
+      "source": "https://dubairuschool.com/professor/dopira-vladimir-tarasovich",
+      "slug": "dopira-vladimir-tarasovich",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/dopira_0.jpg",
+      "image": {
+        "src": "/assets/person-dopira-vladimir-tarasovich.webp",
+        "width": 383,
+        "height": 514,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/dopira_0.jpg"
+      }
+    },
+    {
+      "name": "Зварич Оксана Анатольевна",
+      "role": "Начальные классы, этика и страноведение",
+      "fullRole": "Руководитель МО учителей «Страноведение ОАЭ» и «Этика»/Учитель начальных классов/Учитель этики и страноведения.",
+      "education": "Карагандинское педагогическое училище, учитель начальных классов; Московская педагогическая академия, учитель английского языка.",
+      "source": "https://dubairuschool.com/professor/zvarich-oksana-anatolevna",
+      "slug": "zvarich-oksana-anatolevna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/zvarich.jpg",
+      "image": {
+        "src": "/assets/person-zvarich-oksana-anatolevna.webp",
+        "width": 221,
+        "height": 295,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/zvarich.jpg"
+      }
+    },
+    {
+      "name": "Кацкевич Ольга Владимировна",
+      "role": "Учитель начальных классов; Ассистент школьного психолога",
+      "fullRole": "Учитель начальных классов/Ассистент школьного психолога.",
+      "education": "Белорусский государственный педагогический университет им. Максима Танка, учитель подготовительных классов, тифлопедагог.",
+      "source": "https://dubairuschool.com/professor/kackevich-olga-vladimirovna",
+      "slug": "kackevich-olga-vladimirovna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/kackevich.jpg",
+      "image": {
+        "src": "/assets/person-kackevich-olga-vladimirovna.webp",
+        "width": 234,
+        "height": 317,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/kackevich.jpg"
+      }
+    },
+    {
+      "name": "Кожевников Дмитрий Витальевич",
+      "role": "Инструктор по технологии; Инженер IT",
+      "fullRole": "Инструктор по технологии/Инженер IT.",
+      "education": "Кыргызский государственный политехнический институт.",
+      "source": "https://dubairuschool.com/professor/kozhevnikov-dmitriy-vitalevich",
+      "slug": "kozhevnikov-dmitriy-vitalevich",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/kozhevnikov.jpg",
+      "image": {
+        "src": "/assets/person-kozhevnikov-dmitriy-vitalevich.webp",
+        "width": 379,
+        "height": 555,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/kozhevnikov.jpg"
+      }
+    },
+    {
+      "name": "Масимова Севиль Айдыновна",
+      "role": "Учитель английского языка",
+      "fullRole": "Учитель английского языка.",
+      "education": "Азербайджанский педагогический институт иностранных языков им. 50 лет СССР, учитель английского и немецкого языков. masimova@dubairuschool.com",
+      "source": "https://dubairuschool.com/professor/masimova-sevil-aydynovna",
+      "slug": "masimova-sevil-aydynovna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/masimova_0.jpg",
+      "image": {
+        "src": "/assets/person-masimova-sevil-aydynovna.webp",
+        "width": 381,
+        "height": 554,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/masimova_0.jpg"
+      }
+    },
+    {
+      "name": "Мирзаева Татьяна Евгеньевна",
+      "role": "Учитель русского языка и литературы",
+      "fullRole": "Учитель русского языка и литературы.",
+      "education": "Курский государственный педагогический институт, учитель русского языка и литературы.",
+      "source": "https://dubairuschool.com/professor/mirzaeva-tatyana-evgenevna",
+      "slug": "mirzaeva-tatyana-evgenevna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/mirzaeva_tatyana_evgenevna.jpg",
+      "image": {
+        "src": "/assets/person-mirzaeva-tatyana-evgenevna.webp",
+        "width": 200,
+        "height": 278,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/mirzaeva_tatyana_evgenevna.jpg"
+      }
+    },
+    {
+      "name": "Мирошникова Ирина Юрьевна",
+      "role": "Учитель русского языка и литературы",
+      "fullRole": "Учитель русского языка и литературы.",
+      "education": "Саратовский государственный университет им. Н.Г. Чернышевского.",
+      "source": "https://dubairuschool.com/professor/miroshnikova-irina-yurevna",
+      "slug": "miroshnikova-irina-yurevna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/miroshnikova_irina_yurevna.png",
+      "image": {
+        "src": "/assets/person-miroshnikova-irina-yurevna.webp",
+        "width": 131,
+        "height": 170,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/miroshnikova_irina_yurevna.png"
+      }
+    },
+    {
+      "name": "Михальчук Инна Геннадьевна",
+      "role": "Учитель математики",
+      "fullRole": "Учитель математики.",
+      "education": "Брестский государственный университет им. А.С. Пушкина, учитель математики.",
+      "source": "https://dubairuschool.com/professor/mihalchuk-inna-gennadevna",
+      "slug": "mihalchuk-inna-gennadevna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/mihalchuk.jpg",
+      "image": {
+        "src": "/assets/person-mihalchuk-inna-gennadevna.webp",
+        "width": 220,
+        "height": 295,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/mihalchuk.jpg"
+      }
+    },
+    {
+      "name": "Мона Ахмед",
+      "role": "Арабский язык; руководитель МО",
+      "fullRole": "Руководитель МО арабского языка/Учитель арабского языка.",
+      "education": "Cairo University (Египет), бакалавр востоковедения.",
+      "source": "https://dubairuschool.com/professor/mona-ahmed",
+      "slug": "mona-ahmed",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/mona_ahmed.png",
+      "image": {
+        "src": "/assets/person-mona-ahmed.webp",
+        "width": 170,
+        "height": 226,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/mona_ahmed.png"
+      }
+    },
+    {
+      "name": "Рустамова Мила Явузовна",
+      "role": "Учитель математики",
+      "fullRole": "Учитель математики.",
+      "education": "Азербайджанский ордена Трудового Красного Знамени университет им.С.М. Кирова, математик. rustamova@dubairuschool.com",
+      "source": "https://dubairuschool.com/professor/rustamova-mila-yavuzovna",
+      "slug": "rustamova-mila-yavuzovna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/rustamova.jpg",
+      "image": {
+        "src": "/assets/person-rustamova-mila-yavuzovna.webp",
+        "width": 386,
+        "height": 549,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/rustamova.jpg"
+      }
+    },
+    {
+      "name": "Самсонова Татьяна Васильевна",
+      "role": "Учитель подготовительных классов; Учитель физкультуры",
+      "fullRole": "Учитель подготовительных классов/Учитель физкультуры.",
+      "education": "Могилёвский государственный университет им. А.А. Кулешова, учитель начальных классов и изобразительного искусства.",
+      "source": "https://dubairuschool.com/professor/samsonova-tatyana-vasilevna",
+      "slug": "samsonova-tatyana-vasilevna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/samsonova_tatyana_vasilevna.png",
+      "image": {
+        "src": "/assets/person-samsonova-tatyana-vasilevna.webp",
+        "width": 170,
+        "height": 224,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/samsonova_tatyana_vasilevna.png"
+      }
+    },
+    {
+      "name": "Солдатова Татьяна Викторовна",
+      "role": "Руководитель МО начальных классов; начальные классы и ИЗО",
+      "fullRole": "Руководитель МО начальных классов/Учитель начальных классов/Учитель ИЗО.",
+      "education": "Новосибирский государственный педагогический университет, преподаватель дошкольной педагогики и психологии.",
+      "source": "https://dubairuschool.com/professor/soldatova-tatyana-viktorovna",
+      "slug": "soldatova-tatyana-viktorovna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/soldatova.jpg",
+      "image": {
+        "src": "/assets/person-soldatova-tatyana-viktorovna.webp",
+        "width": 200,
+        "height": 257,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/soldatova.jpg"
+      }
+    },
+    {
+      "name": "Стрельцова Светлана Александровна",
+      "role": "Физика; руководитель МО естественно-географического цикла",
+      "fullRole": "Руководитель МО учителей дисциплин естественно-географического цикла/Учитель физики.",
+      "education": "Ленинградский политехнический университет им. М.И. Калинина, физик. streltsova@dubairuschool.com",
+      "source": "https://dubairuschool.com/professor/strelcova-svetlana-aleksandrovna",
+      "slug": "strelcova-svetlana-aleksandrovna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/strelcova.jpg",
+      "image": {
+        "src": "/assets/person-strelcova-svetlana-aleksandrovna.webp",
+        "width": 383,
+        "height": 524,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/strelcova.jpg"
+      }
+    },
+    {
+      "name": "Турдиева Ольга Владимировна",
+      "role": "Учитель начальных классов; Учитель географии",
+      "fullRole": "Учитель начальных классов/Учитель географии.",
+      "education": "Алма-Атинский энергетический институт, инженер ПКА Педагогический Колледж «Алатау», учитель начальных классов. turdieva@dubairuschool.com",
+      "source": "https://dubairuschool.com/professor/turdieva-olga-vladimirovna",
+      "slug": "turdieva-olga-vladimirovna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/turdieva.jpg",
+      "image": {
+        "src": "/assets/person-turdieva-olga-vladimirovna.webp",
+        "width": 381,
+        "height": 524,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/turdieva.jpg"
+      }
+    },
+    {
+      "name": "Угарова Марина Евгеньевна",
+      "role": "Учитель начальных классов; Учитель физкультуры",
+      "fullRole": "Учитель начальных классов/Учитель физкультуры.",
+      "education": "Ивановское педагогическое училище им. Д.А. Фурмонова, учитель начальных классов, учитель хореографии и ритмики.",
+      "source": "https://dubairuschool.com/professor/ugarova-marina-evgenevna",
+      "slug": "ugarova-marina-evgenevna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/ugarova.jpg",
+      "image": {
+        "src": "/assets/person-ugarova-marina-evgenevna.webp",
+        "width": 383,
+        "height": 559,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/ugarova.jpg"
+      }
+    },
+    {
+      "name": "Хиба АльКассар",
+      "role": "Учитель ислама",
+      "fullRole": "Учитель ислама.",
+      "education": "Bilad Al-Sham University (Сирия), учитель ислама.",
+      "source": "https://dubairuschool.com/professor/hiba-alkassar",
+      "slug": "hiba-alkassar",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/hiba_alkassar.jpg",
+      "image": {
+        "src": "/assets/person-hiba-alkassar.webp",
+        "width": 438,
+        "height": 581,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/hiba_alkassar.jpg"
+      }
+    },
+    {
+      "name": "Черкасова Марина Валерьевна",
+      "role": "История, обществознание, финансовая грамотность и профориентация",
+      "fullRole": "Руководитель Научного общества учащихся/ Координатор по воспитательной работе/Учитель истории и обществознания/Учитель финансовой грамотности и профориентации.",
+      "education": "Донецкий государственный университет, преподаватель истории и обществоведения. cherkasova@dubairuschool.com",
+      "source": "https://dubairuschool.com/professor/cherkasova-marina-valerevna",
+      "slug": "cherkasova-marina-valerevna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/cherkasova_0.jpg",
+      "image": {
+        "src": "/assets/person-cherkasova-marina-valerevna.webp",
+        "width": 383,
+        "height": 525,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/cherkasova_0.jpg"
+      }
+    },
+    {
+      "name": "Шеина Инна Евгеньевна",
+      "role": "Учитель английского языка и литературы",
+      "fullRole": "Учитель английского языка и литературы.",
+      "education": "Ленинградский ордена Трудового Красного Знамени институт водного транспорта, Государственный Лингвистический институт г. Санкт-Петербурга, учитель английского языка. sheina@dubairuschool.ru",
+      "source": "https://dubairuschool.com/professor/sheina-inna-evgenevna",
+      "slug": "sheina-inna-evgenevna",
+      "group": "teachers",
+      "imageUrl": "https://dubairuschool.com/sites/default/files/images/professor/sheina_0.jpg",
+      "image": {
+        "src": "/assets/person-sheina-inna-evgenevna.webp",
+        "width": 377,
+        "height": 550,
+        "source": "https://dubairuschool.com/sites/default/files/images/professor/sheina_0.jpg"
+      }
+    }
+  ],
+  "news": [
+    {
+      "title": "Практикум по обществознанию",
+      "slug": "praktikum-po-obshchestvoznaniyu",
+      "source": "https://dubairuschool.com/news/praktikum-po-obshchestvoznaniyu",
+      "date": "2026-10-27",
+      "text": "Десятиклассники представили на открытом уроке творческие проекты «Мой музей» в качестве экскурсоводов, маркетологов, реставраторов, хранителей экспонатов и искусствоведов, классифицируя музеи по типам, исторической ценности, технологиям, интерактивности и общественной значимости.",
+      "image": {
+        "src": "/assets/news-0.webp",
+        "width": 850,
+        "height": 604,
+        "source": "https://dubairuschool.com/sites/default/files/styles/large/public/images/news/obshchestvo.jpeg?itok=qDerFxFd"
+      }
+    },
+    {
+      "title": "Родительские собрания для 9 и 11 классов",
+      "slug": "roditelskie-sobraniya-dlya-9-i-11-klassov",
+      "source": "https://dubairuschool.com/news/roditelskie-sobraniya-dlya-9-i-11-klassov",
+      "date": "2026-10-27",
+      "text": "В онлайн режиме состоялись родительские собрания с администрацией школы с обсуждением актуальных вопросов по итоговой аттестации учащихся 9-х и 11-х классов и процесса верификации документов об окончании основного общего и среднего общего образования.",
+      "image": {
+        "src": "/assets/news-1.webp",
+        "width": 850,
+        "height": 587,
+        "source": "https://dubairuschool.com/sites/default/files/styles/large/public/images/news/rodit_sobranie.jpeg?itok=7j9Mlsim"
+      }
+    },
+    {
+      "title": "Международное тестирование IBT-2026",
+      "slug": "mezhdunarodnoe-testirovanie-ibt-2026",
+      "source": "https://dubairuschool.com/news/mezhdunarodnoe-testirovanie-ibt-2026",
+      "date": "2026-10-27",
+      "text": "Учащиеся 3 - 10 классов участвуют в IBT экзамене (International Benchmark Test) по независимой оценке качества уровня знаний и умений по математике, естествознанию, критическому мышлению, английскому и арабскому языкам.",
+      "image": {
+        "src": "/assets/news-2.webp",
+        "width": 850,
+        "height": 603,
+        "source": "https://dubairuschool.com/sites/default/files/styles/large/public/images/news/ibt1.jpeg?itok=dyOXNA7h"
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "title": "Конкурс «живая классика 2026»",
+      "source": "https://dubairuschool.com/gallery/konkurs-zhivaya-klassika-2026",
+      "image": {
+        "src": "/assets/gallery-0.webp",
+        "width": 770,
+        "height": 511,
+        "source": "https://dubairuschool.com/sites/default/files/images/gallaries/photo_4_2026-03-12_16-37-15.jpg"
+      }
+    },
+    {
+      "title": "World cultural day",
+      "source": "https://dubairuschool.com/gallery/world-cultural-day",
+      "image": {
+        "src": "/assets/gallery-1.webp",
+        "width": 750,
+        "height": 428,
+        "source": "https://dubairuschool.com/sites/default/files/images/gallaries/whatsapp_image_2026-01-30_at_12.47.35.jpg"
+      }
+    },
+    {
+      "title": "Родительская инициатива",
+      "source": "https://dubairuschool.com/gallery/roditelskaya-iniciativa",
+      "image": {
+        "src": "/assets/gallery-2.webp",
+        "width": 766,
+        "height": 506,
+        "source": "https://dubairuschool.com/sites/default/files/images/gallaries/whatsapp_image_2025-09-29_at_09.55.04.jpeg"
+      }
+    },
+    {
+      "title": "Мастер-класс по арабскому языку",
+      "source": "https://dubairuschool.com/gallery/master-klass-po-arabskomu-yazyku",
+      "image": {
+        "src": "/assets/gallery-3.webp",
+        "width": 767,
+        "height": 497,
+        "source": "https://dubairuschool.com/sites/default/files/images/gallaries/whatsapp_image_2025-09-25_at_13.26.01.jpeg"
+      }
+    },
+    {
+      "title": "Профориентация старшеклассников",
+      "source": "https://dubairuschool.com/gallery/proforientaciya-starsheklassnikov-0",
+      "image": {
+        "src": "/assets/gallery-4.webp",
+        "width": 761,
+        "height": 500,
+        "source": "https://dubairuschool.com/sites/default/files/images/gallaries/whatsapp_image_2025-09-25_at_11.02.33_1.jpeg"
+      }
+    },
+    {
+      "title": "Творческий урок по литературе",
+      "source": "https://dubairuschool.com/gallery/tvorcheskiy-urok-po-literature-0",
+      "image": {
+        "src": "/assets/gallery-5.webp",
+        "width": 770,
+        "height": 488,
+        "source": "https://dubairuschool.com/sites/default/files/images/gallaries/whatsapp_image_2025-09-24_at_12.55.33.jpeg"
+      }
+    }
+  ],
+  "school": {
+    "src": "/assets/school.webp",
+    "width": 828,
+    "height": 350,
+    "source": "https://dubairuschool.com/sites/default/files/2_0.jpg"
+  },
+  "documents": [
+    {
+      "url": "https://dubairuschool.com/page/raspisanie-predmetov-2026-2027",
+      "text": "Расписание предметов 2026 - 2027 Скачать прикрепленные файлы: Расписание предметов 2026 - 2027",
+      "files": [
+        {
+          "title": "Расписание предметов 2026 - 2027",
+          "url": "https://dubairuschool.com/sites/default/files/raspisanie_predmetov_2026-2027.pdf"
+        }
+      ]
+    },
+    {
+      "url": "https://dubairuschool.com/page/kalendar-2026-2027",
+      "text": "Календарь 2026 - 2027 Скачать прикрепленные файлы: khda_academic_calendar_2026-2027.pdf",
+      "files": [
+        {
+          "title": "khda_academic_calendar_2026-2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/khda_academic_calendar_2026-2027.pdf"
+        }
+      ]
+    },
+    {
+      "url": "https://dubairuschool.com/page/shkolnaya-forma-i-vneshniy-vid-uchashchihsya",
+      "text": "Школьная форма и внешний вид учащихся I. Общие Положения Школьная форма – обязательная повседневная форма одежды для учащихся во время их нахождения в школе и на официальных мероприятиях вне школы. Единая школьная форма: создает в школе деловую атмосферу, необходимую для занятий, обеспечивает создание комфортных условий обучения; позволяет избежать соревновательности между детьми в одежде, экономит деньги родителей; формирует чувство корпоративной принадлежности, коллективизма, наличия общих целей; способствует воспитанию аккуратности, дисциплинированности, уважения к школьным традициям. II Комплектация и порядок выдачи школьной формы Школьная форма выдается всем ученикам Русской Международной Школы после оплаты за обучение. Если же оплата произошла после 1 сентября, то ученик должен принести квитанцию (“Uniform distribution form”) об оплате формы из бухгалтерии. Для каждого ученика 1-11 классов выдается 1 комплект школьной формы. Школьная форма для мальчиков состоит из 4 наименований: Рубашка белая с логотипом школы; Брюки темно-синие; Футболка - поло белая с синим контрастным воротником и логотипом школы; Брюки спортивные. Школьная форма для девочек состоит из 4 наименований: Блузка белая с логотипом школы; Сарафан либо брюки, либо юбка темно-синие (по выбору ученицы или родителей ученицы); Футболка - поло белая с синим контрастным воротником и логотипом школы; Брюки спортивные. Деловой стиль одежды (пункты 1 и 2) предназначен для ношения учениками каждый день, кроме дней физкультуры. Спортивный стиль одежды (пункты 3 и 4) предназначен для ношения учениками в дни физкультуры. Для учеников KG-1, KG-2 выдается два спортивных комплекта одежды: Футболка - поло белая с синим контрастным воротником; Брюки спортивные. Примечание. Для холодного времени года все ученики должны приобрести дополнительно темно-синий жакет с логотипом школы в Uniform store. Ученики могут также приобрести дополнительный комплект школьной формы после предоставления квитанции из бухгалтерии об оплате дополнительного комплекта. Если в день оплаты за дополнительный комплект, таковой формы нет в наличии, то время ожидания составляет две недели.",
+      "files": []
+    },
+    {
+      "url": "https://dubairuschool.com/page/transport",
+      "text": "Транспорт Каждому учащемуся при необходимости предоставляется право пользования школьным транспортом по следующим маршрутам: Dubai – Mirdif, International City, Silicon Oasis, JVC, Greens, JLT, JBR, Dubai Marina, Business Bay, Dubai Creek, Al Jaddaf, Dubai Hills, Sobha, Nad Al Sheba, Liwan, Warsan, Arjan, Sport City, Motor City, Downtown, DIFC Sharjah – Al Khan, Al Majaz, Maryam Island В школе имеются комфортабельные автобусы, отвечающие всем требованиям, предъявляемым Департаментом Транспорта города Дубая к школьному транспорту (наличие кондиционеров, ремней безопасности на всех сиденьях и пр.) В каждом автобусе есть руководитель, который осуществляет контроль за порядком, дисциплиной и обеспечивает безопасные условия доставки детей в пункты назначения – от места проживания до школы и обратно. Родители / законные представители заполняют заявление на английском языке с просьбой о предоставлении их ребенку транспортных услуг, где указывают свой подробный адрес и контактные телефоны.",
+      "files": []
+    },
+    {
+      "url": "https://dubairuschool.com/page/itogovaya-attestaciya",
+      "text": "Итоговая Аттестация 1. Общие положения 1.1 Итоговая аттестация – процедура экспертизы общеобразовательных компетенций и практических умений выпускников IX и XI классов школы, которая проводится по завершении учебного года в виде письменных и устных экзаменов и является обязательной. Её цель – установление фактического уровня общеобразовательных компетенций и практических умений выпускников в соответствии с федеральными образовательными стандартами. 1.2 К итоговой аттестации допускаются обучающиеся IX классов, освоившие образовательные программы основного общего образования и имеющие положительные годовые отметки по всем предметам учебного плана, а также обучающиеся, имеющие неудовлетворительную годовую отметку по одному предмету учебного плана с обязательной сдачей экзамена по этому предмету. 1.3 К итоговой аттестации допускаются обучающиеся XI классов, освоившие образовательные программы среднего (полного) общего образования и имеющие положительные годовые отметки по всем предметам учебного плана. 2. Порядок проведения итоговой аттестации 2.1 Выпускники IX класса сдают не менее четырех экзаменов: письменные экзамены по русскому языку и математике в формате ЕГЭ, а также два экзамена по выбору выпускника из числа предметов, изучавшихся в IX классе. 2.2 Выпускники XI класса сдают не менее пяти экзаменов: письменные экзамены по математике и русскому языку в формате ЕГЭ, а также три экзамена по выбору выпускника из числа предметов, изучавшихся в X и XI классах. 2.3 В IX классе на письменные экзамены по русскому языку и математике отводится 4 астрономических часа. В XI классе на письменный экзамен по русскому языку отводится 3 астрономических часа, по математике – 4 астрономических часа. Требования предъявляемые на экзаменах к уровню обученности обучающихся, определяются установленными федеральными государственными образовательными стандартами. 2.4 Письменные экзаменационные работы оцениваются по пятибалльной системе. Итоговая оценка определяется на основе годовой и экзаменационной оценок с учетом четвертных оценок, результатов промежуточной аттестации и уровня фактической подготовки обучающегося. При неудовлетворительной экзаменационной оценке не может быть выведена положительная итоговая оценка. 2.5 Выпускники IX классов, получившие на итоговой аттестации не более двух неудовлетворительных отметок, и выпускники XI классов, получившие на итоговой аттестации не более одной неудовлетворительной отметки, допускаются к повторной итоговой аттестации по этим предметам. Повторная итоговая аттестация проводится до начала учебного года в сроки, установленные государственными органами управления образованием. 3. Порядок выдачи сертификатов об уровне общего образования 3.1 Педагогический совет школы рассматривает вопрос о результатах итоговой аттестации выпускников школы и принимает решение о выпуске обучающихся из школы по результатам итоговой аттестации; о выдаче выпускникам документов о соответствующем уровне образования; о награждении выпускников похвальной грамотой «За отличные успехи в обучении» 3.2 Выпускникам, прошедшим итоговую аттестацию, выдается документ о соответствующем уровне общего образования на английском языке: выпускникам IX класса - сертификат об основном общем образовании, выпускникам XI класса – сертификат о среднем (полном) общем образовании. 3.3 В сертификат об основном общем образовании выставляются итоговые отметки по предметам, которые изучались выпускником в классах второй ступени общего образования. В сертификат о среднем (полном) общем образовании выставляются итоговые отметки по предметам, которые изучались выпускником в классах третьей ступени общего образования. 3.4 В сертификате отметки по предметам проставляются цифрами и в скобках словами: 5(отлично), 4(хорошо), 3(удовлетворительно). В сертификате о среднем (полном) общем образовании указывается также эквивалент полученных выпускником отметок в соответствии со 100балльной системой, принятой в учебных заведениях ОАЭ: 5 (отлично) - 90-100 баллов 4 (хорошо) - 89-75 баллов 3 (удовлетворительно) - 74-60 баллов 2 (неудовлетворительно) - 59 баллов и менее 3.5 Несовершеннолетние обучающиеся IX классов, не допущенные к итоговой аттестации, а также выпускники, не прошедшие итоговую аттестацию, по усмотрению родителей (законных представителей) оставляются на повторное обучение или получают справку об обучении в общеобразовательном учреждении установленного образца. 3.6 Обучающимся XI классов, не допущенным к итоговой аттестации, а также выпускникам, не прошедшим итоговую аттестацию, выдается справка об обучении в общеобразовательном учреждении установленного образца. 3.7 В справке указываются экзаменационные и итоговые отметки (в том числе и неудовлетворительные) по всем предметам, изучавшимся в классах соответствующей ступени общего образования.",
+      "files": []
+    },
+    {
+      "url": "https://dubairuschool.com/page/school-fees-academic-year-2026-2027",
+      "text": "SCHOOL FEES FOR THE ACADEMIC YEAR 2026-2027 Скачать прикрепленные файлы: web_2026-2027_21.08.pdf",
+      "files": [
+        {
+          "title": "web_2026-2027_21.08.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/web_2026-2027_21.08.pdf"
+        }
+      ]
+    },
+    {
+      "url": "https://dubairuschool.com/page/school-fees-fact-sheet-khda",
+      "text": "SCHOOL FEES FACT SHEET (KHDA) KG 1: https://web.khda.gov.ae/en/Education-Directory/Schools/School-Details/Fact-Sheet?centerID=143&currID=5&gradeID=141&sectionID=1&QR=1&ismobile=1&AcyID=26&ispreview=0 KG 2: https://web.khda.gov.ae/en/Education-Directory/Schools/School-Details/Fact-Sheet?centerID=143&currID=5&gradeID=142&sectionID=1&QR=1&ismobile=1&AcyID=26&ispreview=0 Grade 1: https://web.khda.gov.ae/en/Education-Directory/Schools/School-Details/Fact-Sheet?centerID=143&currID=5&gradeID=143&sectionID=1&QR=1&ismobile=1&AcyID=26&ispreview=0 Grade 2: https://web.khda.gov.ae/en/Education-Directory/Schools/School-Details/Fact-Sheet?centerID=143&currID=5&gradeID=144&sectionID=1&QR=1&ismobile=1&AcyID=26&ispreview=0 Grade 3: https://web.khda.gov.ae/en/Education-Directory/Schools/School-Details/Fact-Sheet?centerID=143&currID=5&gradeID=145&sectionID=1&QR=1&ismobile=1&AcyID=26&ispreview=0 Grade 4: https://web.khda.gov.ae/en/Education-Directory/Schools/School-Details/Fact-Sheet?centerID=143&currID=5&gradeID=146&sectionID=1&QR=1&ismobile=1&AcyID=26&ispreview=0 Grade 5: https://web.khda.gov.ae/en/Education-Directory/Schools/School-Details/Fact-Sheet?centerID=143&currID=5&gradeID=147&sectionID=1&QR=1&ismobile=1&AcyID=26&ispreview=0 Grade 6: https://web.khda.gov.ae/en/Education-Directory/Schools/School-Details/Fact-Sheet?centerID=143&currID=5&gradeID=148&sectionID=1&QR=1&ismobile=1&AcyID=26&ispreview=0 Grade 7: https://web.khda.gov.ae/en/Education-Directory/Schools/School-Details/Fact-Sheet?centerID=143&currID=5&gradeID=149&sectionID=1&QR=1&ismobile=1&AcyID=26&ispreview=0 Grade 8: https://web.khda.gov.ae/en/Education-Directory/Schools/School-Details/Fact-Sheet?centerID=143&currID=5&gradeID=150&sectionID=1&QR=1&ismobile=1&AcyID=26&ispreview=0 Grade 9: https://web.khda.gov.ae/en/Education-Directory/Schools/School-Details/Fact-Sheet?centerID=143&currID=5&gradeID=151&sectionID=1&QR=1&ismobile=1&AcyID=26&ispreview=0 Grade 10: https://web.khda.gov.ae/en/Education-Directory/Schools/School-Details/Fact-Sheet?centerID=143&currID=5&gradeID=152&sectionID=1&QR=1&ismobile=1&AcyID=26&ispreview=0 Grade 11: https://web.khda.gov.ae/en/Education-Directory/Schools/School-Details/Fact-Sheet?centerID=143&currID=5&gradeID=153&sectionID=1&QR=1&ismobile=1&AcyID=26&ispreview=0",
+      "files": []
+    },
+    {
+      "url": "https://dubairuschool.com/page/school-policies-2",
+      "text": "School Policies Скачать прикрепленные файлы: 1_school_vision_2026_-_2027.pdf 2_student_admission_placement_policy_2026_-_2027.pdf 3_sod_admission_policy_2026_-_2027.pdf 4_attendance_punctuality_policy_for_2026_-_2027.pdf 5_anthem_observance_assembly_induction_policy_2026_-_2027.pdf 6_inclusion_policy_2026_-_2027.pdf 7_transportation_policy_2026_-_20271.pdf 8_code_of_conduct_behaviour_policy_2026_-_2027.pdf 9_child_protection_policy_2026_-_2027.pdf 10_wellbeing_policy_2026_-_2027.pdf 11_arabic_islamic_social_studies_policy_kg_2026_-_2027.pdf 12_safeguarding_policy_2026_-_2027.pdf 13_health_and_safety_policy_2026_-_2027.pdf 14_emergency_response_policy_2026_-_2027.pdf 15_anti-bullying_policy_2026_-_2027.pdf 16_anti-vaping_anti-smoking_policy_2026_-_2027.pdf 17_electronic_addiction_policy_2026_-_2027.pdf 18_e-cyber_safety_policy_2026_-_2027.pdf 19_defamation_on_social_media_e-cyber_safety_policy_2026_-_2027.pdf 20_infection_control_policy_2026-2027_0001.pdf 21_assessment_policy_2026_-_2027.pdf 22_teaching_policy_2026_-_2027.pdf 23_community_and_parental_engagement_policy_2026_-_2027.pdf 24_academic_and_career-guidance_policy_2026_-_2027.pdf 25_intrusion_policy_2026_-_2027.pdf 26_reading_literacy_policy_2026_-_2027-2.pdf 27_emirati_students_policy_2026_-_2027.pdf 28_school_board_governance_2026_-_2027.pdf 29_social_media_policy_2026-2027_2.pdf 30_promotion_retention_policy_2026-2027.pdf 31_graduation_policy_2026-2027.pdf 32_ai_policy_2026_-2027.pdf",
+      "files": [
+        {
+          "title": "1_school_vision_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/1_school_vision_2026_-_2027.pdf"
+        },
+        {
+          "title": "2_student_admission_placement_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/2_student_admission_placement_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "3_sod_admission_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/3_sod_admission_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "4_attendance_punctuality_policy_for_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/4_attendance_punctuality_policy_for_2026_-_2027.pdf"
+        },
+        {
+          "title": "5_anthem_observance_assembly_induction_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/5_anthem_observance_assembly_induction_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "6_inclusion_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/6_inclusion_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "7_transportation_policy_2026_-_20271.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/7_transportation_policy_2026_-_20271.pdf"
+        },
+        {
+          "title": "8_code_of_conduct_behaviour_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/8_code_of_conduct_behaviour_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "9_child_protection_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/9_child_protection_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "10_wellbeing_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/10_wellbeing_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "11_arabic_islamic_social_studies_policy_kg_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/11_arabic_islamic_social_studies_policy_kg_2026_-_2027.pdf"
+        },
+        {
+          "title": "12_safeguarding_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/12_safeguarding_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "13_health_and_safety_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/13_health_and_safety_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "14_emergency_response_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/14_emergency_response_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "15_anti-bullying_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/15_anti-bullying_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "16_anti-vaping_anti-smoking_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/16_anti-vaping_anti-smoking_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "17_electronic_addiction_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/17_electronic_addiction_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "18_e-cyber_safety_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/18_e-cyber_safety_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "19_defamation_on_social_media_e-cyber_safety_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/19_defamation_on_social_media_e-cyber_safety_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "20_infection_control_policy_2026-2027_0001.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/20_infection_control_policy_2026-2027_0001.pdf"
+        },
+        {
+          "title": "21_assessment_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/21_assessment_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "22_teaching_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/22_teaching_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "23_community_and_parental_engagement_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/23_community_and_parental_engagement_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "24_academic_and_career-guidance_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/24_academic_and_career-guidance_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "25_intrusion_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/25_intrusion_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "26_reading_literacy_policy_2026_-_2027-2.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/26_reading_literacy_policy_2026_-_2027-2.pdf"
+        },
+        {
+          "title": "27_emirati_students_policy_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/27_emirati_students_policy_2026_-_2027.pdf"
+        },
+        {
+          "title": "28_school_board_governance_2026_-_2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/28_school_board_governance_2026_-_2027.pdf"
+        },
+        {
+          "title": "29_social_media_policy_2026-2027_2.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/29_social_media_policy_2026-2027_2.pdf"
+        },
+        {
+          "title": "30_promotion_retention_policy_2026-2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/30_promotion_retention_policy_2026-2027.pdf"
+        },
+        {
+          "title": "31_graduation_policy_2026-2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/31_graduation_policy_2026-2027.pdf"
+        },
+        {
+          "title": "32_ai_policy_2026_-2027.pdf",
+          "url": "https://dubairuschool.com/sites/default/files/32_ai_policy_2026_-2027.pdf"
+        }
+      ]
+    },
+    {
+      "url": "https://dubairuschool.com/page/school-policies-1",
+      "text": "School Policies Скачать прикрепленные файлы: Child Protection Policy 2025 - 2026 Attendance Policy 2025 - 2026 ANTI-BULLYING POLICY 2025 - 2026 TRANSPORTATION POLICY 2025 - 2026 ADMISSION POLICY 2025 - 2026 READING POLICY 2025 - 2026 SCHOOL VISION 2025 - 2026 WELLBEING POLICY 2025 - 2026 SoD Admission Policy 2025 - 2026 SAFEGUARDING POLICY 2025 - 2026 INTRUSION POLICY 2025 - 2026 INCLUSION POLICY 2025 - 2026 Health and Safety Policy 2025 - 2026 E-Cyber Safety Policy 2025 - 2026 CODE OF CONDUCT POLICY 2025 - 2026 EMERGENCY RESPONSE POLICY 2025 - 2026 CAREER COUNSELLING POLICY 2025 - 2026 ARABIC ISLAM SS KG POLICY 2025 - 2026",
+      "files": [
+        {
+          "title": "Child Protection Policy 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/1_child_protection_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "Attendance Policy 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/2_attendance_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "ANTI-BULLYING POLICY 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/3_anti-bullying_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "TRANSPORTATION POLICY 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/4_transportation_policy_2024-2025.pdf"
+        },
+        {
+          "title": "ADMISSION POLICY 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/7_admission_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "READING POLICY 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/8_reading_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "SCHOOL VISION 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/9_school_vision_2025_-_2026.pdf"
+        },
+        {
+          "title": "WELLBEING POLICY 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/10_wellbeing_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "SoD Admission Policy 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/11_sod_admission_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "SAFEGUARDING POLICY 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/12_safeguarding_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "INTRUSION POLICY 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/13_intrusion_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "INCLUSION POLICY 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/14_inclusion_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "Health and Safety Policy 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/15_health_and_safety_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "E-Cyber Safety Policy 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/16_e-cyber_safety_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "CODE OF CONDUCT POLICY 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/17_code_of_conduct_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "EMERGENCY RESPONSE POLICY 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/18_emergency_response_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "CAREER COUNSELLING POLICY 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/career_counselling_policy_2025_-_2026.pdf"
+        },
+        {
+          "title": "ARABIC ISLAM SS KG POLICY 2025 - 2026",
+          "url": "https://dubairuschool.com/sites/default/files/arabic_islam_ss_kg_policy_2025_-_2026.pdf"
+        }
+      ]
+    },
+    {
+      "url": "https://dubairuschool.com/news/russkoy-mezhdunarodnoy-shkole-30-let",
+      "text": "Русской Международной Школе 30 лет 03 Мар 2016 admin Галерея \"Русской Международной Школе 30 лет\" Русской Международной Школе в Дубае – 30 лет! Само существование школы стало возможным благодаря мистеру Наджибу Наджибулла, ее основателю и владельцу. Ровно 30 лет назад, в уже далеком для нас 1996 году, в Дубае открылась первая на территории Объединенных Арабских Эмиратов Русская школа. Переоценить значимость этого события невозможно: за 30 лет школу окончили сотни выпускников, для всех них школа стала не только местом, где они получили качественное образование, но и вторым домом, островком русской культуры, единственным местом в стране, где все родное, близкое и понятное. Русская Международная Школа – это не только сотни учащихся в течение пяти дней в неделю с радостью бегущих сюда, но и прекрасные учителя, окружающие теплотой и заботой каждого ученика, это и администрация школы во главе с самым мудрым и требовательным директором, Халиковой Мариной Борисовной. Школа поистине стала интернациональной - международной. Для всех учащихся Школы созданы благоприятные условия для достижения соответствующего образовательного уровня, личностного развития, сохранения национально-культурной идентичности; у всех формируется положительное отношение к русскому языку, являющемуся национальным достоянием России. С 2010 года выпускникам Русской Международной Школы Министерством образования г. Дубай выдается «Свидетельство об окончании средней школы». Выпускники школы, успешно овладевшие школьной программой, английским и арабским языками легко адаптируются к новым условиям в ВУЗе любой стране мира, где они обретают престижные профессии и имеют возможность для дальнейшего самообразования. Мы с оптимизмом смотрим в будущее и уверены: Русская Международная Школа в Дубае сохранит все лучшее из накопленного за 30 лет опыта работы Письмо о Русской Международной Школе Отзывы учащихся о школе Галерея \"Русской Международной Школе 28 лет\" Статья \"Русская школа в Дубае: 20 лет спустя\" в журнале \"Авиамост\" Документ согласно приказу №1147 Минобрнауки РФ Инновации в Русской Международной Школе Стихотворения юных поэтов о школе Праздничный выпуск школьного литературного альманаха \"Северные цветы\" 2016 Школе - 25 лет! 2021 Русская Международная Школа",
+      "files": [
+        {
+          "title": "Отзывы учащихся о школе",
+          "url": "http://dubairuschool.com/sites/default/files/otzivy_uch.docx"
+        },
+        {
+          "title": "Документ согласно приказу №1147 Минобрнауки РФ",
+          "url": "http://dubairuschool.com/sites/default/files/prikaz.pdf"
+        },
+        {
+          "title": "Инновации в Русской Международной Школе",
+          "url": "http://dubairuschool.com/sites/default/files/innovacii_shkoly_2015-2016.pdf"
+        },
+        {
+          "title": "Праздничный выпуск школьного литературного альманаха \"Северные цветы\" 2016",
+          "url": "http://dubairuschool.com/sites/default/files/almanah.pdf"
+        },
+        {
+          "title": "2021 Русская Международная Школа",
+          "url": "http://dubairuschool.com/sites/default/files/2021%20%D0%A0%D0%A3%D0%A1%D0%A1%D0%9A%D0%90%D0%AF%20%D0%9C%D0%95%D0%96%D0%94%D0%A3%D0%9D%D0%90%D0%A0%D0%9E%D0%94%D0%9D%D0%90%D0%AF%20%D0%A8%D0%9A%D0%9E%D0%9B%D0%90.pptx"
+        }
+      ]
+    },
+    {
+      "url": "https://dubairuschool.com/page/raspisanie-zvonkov",
+      "text": "Расписание звонков",
+      "files": []
+    }
+  ],
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14430.571303128594!2d55.40442999999998!3d25.282597942462484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5ffbf621b1aa4d2!2sRussian+International+School!5e0!3m2!1sen!2sae!4v1414168972618",
+  "admissionsFiles": [
+    {
+      "text": "admin.ris@dubairuschool.com",
+      "url": "mailto:admin.ris@dubairuschool.com"
+    },
+    {
+      "text": "Документы",
+      "url": "https://dubairuschool.com/sites/default/files/dokumenty.pdf"
+    }
+  ]
+}
