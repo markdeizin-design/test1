@@ -10,8 +10,13 @@ const pages=JSON.parse(fs.readFileSync(path.join(root,'pages.json'),'utf8'));
 const home=fs.readFileSync(path.join(root,'dist/index.html'),'utf8');
 const styleVersion=createHash('sha256').update(fs.readFileSync(path.join(root,'dist/assets/style.css'))).digest('hex').slice(0,12);
 const scriptVersion=createHash('sha256').update(fs.readFileSync(path.join(root,'dist/assets/site.js'))).digest('hex').slice(0,12);
+const videoVersion=createHash('sha256').update(fs.readFileSync(path.join(root,'dist/assets/hero-classroom.mp4'))).digest('hex').slice(0,12);
+const posterVersion=createHash('sha256').update(fs.readFileSync(path.join(root,'dist/assets/hero-classroom-poster.webp'))).digest('hex').slice(0,12);
 const canonical=home.match(/rel="canonical" href="([^"]+)"/)[1];
 const basePath=new URL(canonical).pathname.replace(/\/$/,'');
+assert(home.includes(`data-src="${basePath}/assets/hero-classroom.mp4?v=${videoVersion}"`));
+assert(home.includes(`poster="${basePath}/assets/hero-classroom-poster.webp?v=${posterVersion}"`));
+assert(home.includes(`url('${basePath}/assets/hero-classroom-poster.webp?v=${posterVersion}')`));
 assert.equal(data.people.length,38);
 assert.equal(new Set(data.people.map(p=>p.slug)).size,38);
 assert.equal(new Set(data.people.map(p=>p.image.source)).size,38);
@@ -120,7 +125,7 @@ for(const p of pages){
   assert(html.includes(`/assets/site.js?v=${scriptVersion}"`),p.route+' requires the current script version');
   assert.equal((html.match(/data-hero-video/g)||[]).length,p.route==='/'?1:0,'Video belongs only on the home page');
   assert.equal((html.match(/class="ambient-background" aria-hidden="true"/g)||[]).length,1,p.route+' requires one decorative backdrop');
-  for(const [,href] of html.matchAll(/(?:href|src)="(\/[^"#]*)/g)){
+  for(const [,href] of html.matchAll(/(?:href|src|poster)="(\/[^"#]*)/g)){
     const clean=href.split(/[?#]/)[0];
     assert(clean.startsWith(basePath+'/') || clean===basePath,p.route+' link escapes site path: '+clean);
     assert(fs.existsSync(path.join(root,'dist',clean.slice(basePath.length))),p.route+' missing '+clean);
