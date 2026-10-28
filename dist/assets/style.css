@@ -19,6 +19,10 @@
 .brand-text small{font-weight:500;letter-spacing:1.25px}
 .button{background:var(--blue);border-color:var(--blue);border-radius:5px}
 .button:hover{background:var(--navy);border-color:var(--navy)}
+.site-header .navigation{gap:8px}
+.navigation a{justify-content:center;padding:9px 12px;border:1px solid var(--blue);border-radius:5px;color:var(--blue);text-align:center}
+.navigation a:hover,.navigation a[aria-current=page]{background:var(--blue);color:#fff}
+.navigation a[aria-current=page]:after{content:none}
 .eyebrow:before{background:var(--red)}
 .section-white{background:#eef3fa}
 .page-head{background:#eaf1fb;border-bottom-color:#cfddee}
