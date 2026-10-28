@@ -44,14 +44,18 @@ const style=()=>({setProperty(){},removeProperty(){}});
 const brand={style:style(),offsetHeight:250,parentElement:{getBoundingClientRect:()=>({top:100})}};
 const community={offsetHeight:500,getBoundingClientRect:()=>({top:1200})};
 const preference={matches:true,addEventListener(event,listener){this.listener=listener;}};
-let requestedFrames=0,cancelledAnimations=0;
+let requestedFrames=0,cancelledAnimations=0,navOpen=false;
+const menuEvents=new Map(),menuAttributes=new Map([['aria-expanded','false']]);
+const menu={addEventListener:(event,listener)=>menuEvents.set(event,listener),getAttribute:key=>menuAttributes.get(key),setAttribute:(key,value)=>menuAttributes.set(key,value)};
+const navigation={addEventListener(){},classList:{toggle(name,on){navOpen=on;},remove(){navOpen=false;}}};
+const mobileMenuPreference={addEventListener(event,listener){this.listener=listener;}};
 const fakeDocument={
-  querySelector:selector=>selector==='[data-brand-fade]'?brand:selector==='[data-community]'?community:selector==='.site-header'?{offsetHeight:80}:null,
+  querySelector:selector=>selector==='[data-menu]'?menu:selector==='#navigation'?navigation:selector==='[data-brand-fade]'?brand:selector==='[data-community]'?community:selector==='.site-header'?{offsetHeight:80}:null,
   querySelectorAll:selector=>selector==='[data-flag]'?[{style:style(),dataset:{speed:1}}]:[],
   addEventListener(){},fonts:{ready:Promise.resolve()},getAnimations:()=>[{cancel(){cancelledAnimations++;}}]
 };
 vm.runInNewContext(fs.readFileSync(path.join(root,'dist/assets/site.js'),'utf8').replace(/^export /gm,''),{
-  document:fakeDocument,window:{scrollY:0,innerHeight:800,matchMedia:()=>preference,addEventListener(){}},
+  document:fakeDocument,window:{scrollY:0,innerHeight:800,matchMedia:query=>query.includes('prefers-reduced-motion')?preference:mobileMenuPreference,addEventListener(){}},
   requestAnimationFrame(){requestedFrames++;return 1;},cancelAnimationFrame(){}
 });
 await Promise.resolve();
@@ -62,12 +66,19 @@ assert.equal(requestedFrames,1);
 preference.matches=true;preference.listener();
 assert.equal(requestedFrames,1);
 assert.equal(cancelledAnimations,1);
+menuEvents.get('click')();
+assert.equal(menuAttributes.get('aria-expanded'),'true');
+assert.equal(navOpen,true);
+mobileMenuPreference.listener();
+assert.equal(menuAttributes.get('aria-expanded'),'false');
+assert.equal(navOpen,false);
 for(const p of pages){
   const file=path.join(root,'dist',p.route.slice(1),'index.html');
   const html=fs.readFileSync(file,'utf8');
   assert.equal((html.match(/<h1[ >]/g)||[]).length,1,p.route+' requires one h1');
   assert(!/href="#"/.test(html),p.route+' contains empty link');
   assert(html.includes('lang="ru"'));
+  assert.equal((html.match(/class="ambient-background" aria-hidden="true"/g)||[]).length,1,p.route+' requires one decorative backdrop');
   for(const [,href] of html.matchAll(/(?:href|src)="(\/[^"#]*)/g)){
     const clean=href.split('#')[0];
     assert(clean.startsWith(basePath+'/') || clean===basePath,p.route+' link escapes site path: '+clean);

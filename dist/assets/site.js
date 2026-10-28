@@ -33,6 +33,7 @@ if (typeof document !== 'undefined') {
     if (event.key === 'Escape' && menu?.getAttribute('aria-expanded') === 'true') { closeMenu(); menu.focus(); }
   });
   navigation?.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+  if (menu) window.matchMedia('(max-width: 960px)').addEventListener('change', closeMenu);
 
   const search = document.querySelector('#teacher-search');
   const filters = [...document.querySelectorAll('[data-filter]')];
