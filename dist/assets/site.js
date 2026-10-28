@@ -93,6 +93,37 @@ if (typeof document !== 'undefined') {
   });
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const heroVideo = document.querySelector('[data-hero-video]');
+  const videoToggle = document.querySelector('[data-video-toggle]');
+  if (heroVideo && videoToggle) {
+    let wantsVideo = true, inView = true;
+    function videoState() {
+      videoToggle.setAttribute('aria-pressed', String(heroVideo.paused));
+      videoToggle.classList.toggle('is-paused', heroVideo.paused);
+      videoToggle.querySelector('span').textContent = heroVideo.paused ? 'Включить видеофон' : 'Пауза видеофона';
+    }
+    function syncVideo() {
+      if (reducedMotion.matches) {
+        heroVideo.pause(); heroVideo.classList.remove('is-ready'); videoToggle.hidden = true;
+        return;
+      }
+      if (!wantsVideo || !inView || document.hidden) { heroVideo.pause(); return; }
+      if (!heroVideo.getAttribute('src')) heroVideo.src = heroVideo.dataset.src;
+      heroVideo.play().catch(() => { videoToggle.hidden = Boolean(heroVideo.error) || reducedMotion.matches; videoState(); });
+    }
+    heroVideo.addEventListener('playing', () => {
+      heroVideo.classList.add('is-ready'); videoToggle.hidden = false; videoState();
+    });
+    heroVideo.addEventListener('pause', videoState);
+    heroVideo.addEventListener('error', () => { heroVideo.classList.remove('is-ready'); videoToggle.hidden = true; });
+    videoToggle.addEventListener('click', () => { wantsVideo = heroVideo.paused; syncVideo(); });
+    reducedMotion.addEventListener('change', syncVideo);
+    document.addEventListener('visibilitychange', syncVideo);
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([entry]) => { inView = entry.isIntersecting; syncVideo(); }).observe(heroVideo.parentElement);
+    }
+    syncVideo();
+  }
   const brand = document.querySelector('[data-brand-fade]');
   const community = document.querySelector('[data-community]');
   const flags = [...document.querySelectorAll('[data-flag]')];

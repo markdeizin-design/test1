@@ -139,3 +139,39 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
  .text-link{gap:0}.actions{column-gap:16px}.dialog-controls{gap:8px}
 }
 @media(prefers-reduced-motion:reduce){.ambient-cloud{animation:none!important;transform:none!important;will-change:auto}}
+
+/* The video stays inside the opening composition; the rest of the page keeps its gradient. */
+.hero.hero-centered{padding-top:0;background:transparent}
+.hero-intro{position:relative;isolation:isolate;overflow:hidden;padding:42px 0 68px}
+.hero-media{position:absolute;inset:0;z-index:0;pointer-events:none;background:#edf2f8 url('hero-classroom-poster.webp') 48% center/cover;filter:blur(2px) saturate(.72) contrast(.94);transform:scale(1.015)}
+.hero-media video{width:100%;height:100%;object-fit:cover;object-position:48% center;opacity:0;transition:opacity .6s}
+.hero-media video.is-ready{opacity:1}
+.hero-intro:after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#edf3fa96,#fffaf1d1 48%,#e8effba3),linear-gradient(0deg,#e4ecf6b3,transparent 60%)}
+.hero-content{position:relative;z-index:2;max-width:1060px}
+.hero-emblem{width:128px;margin-bottom:17px}
+.brand-location{font-size:9px;letter-spacing:2.5px;margin-bottom:16px}
+.hero-centered h1{font-size:clamp(39px,4.15vw,60px);line-height:1.13;letter-spacing:-1.4px;text-shadow:0 1px 12px #fff9;text-wrap:balance}
+.hero-motto{font-size:23px;line-height:1.4;margin-top:23px}
+.hero-description{max-width:620px;margin:14px auto 0;color:#304c64;font-size:15px;line-height:1.7}
+.hero-centered .actions{margin-top:25px}
+.hero-centered .text-link{border-color:#6b8299}
+.video-toggle{position:absolute;right:max(24px,calc((100% - 1280px)/2));bottom:13px;z-index:3;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:8px 14px;border:1px solid #8ea4bf;border-radius:24px;background:#fafbf2c9;color:var(--navy);font-size:11px;font-weight:600}
+.video-toggle[hidden]{display:none}
+.video-toggle:hover{background:#fff}
+.video-toggle svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.video-toggle .play-icon,.video-toggle.is-paused .pause-icon{display:none}
+.video-toggle.is-paused .play-icon{display:block}
+@media(max-width:960px){.hero-intro{padding-top:34px}.hero-centered h1{font-size:clamp(36px,5.2vw,48px)}}
+@media(max-width:600px){
+ .hero-intro{padding:28px 0 64px}
+ .hero-emblem{width:110px;margin-bottom:14px}
+ .brand-location{font-size:8px;letter-spacing:1.35px;margin-bottom:13px}
+ .hero-centered h1{font-size:clamp(29px,7.8vw,38px);line-height:1.18;letter-spacing:-.65px}
+ .hero-motto{font-size:19px;line-height:1.4;margin-top:19px}
+ .hero-description{font-size:14px;line-height:1.65;max-width:330px;margin-top:13px}
+ .hero-centered .actions{margin-top:21px;gap:8px 16px}
+ .hero-media,.hero-media video{background-position:44% center;object-position:44% center}
+ .hero-media{filter:blur(1.5px) saturate(.72) contrast(.94)}
+ .video-toggle{right:18px;bottom:10px;font-size:10px;padding-inline:12px}
+}
+@media(prefers-reduced-motion:reduce){.hero-media video,.video-toggle{display:none!important}}

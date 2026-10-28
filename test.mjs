@@ -9,6 +9,7 @@ const data=JSON.parse(fs.readFileSync(path.join(root,'content.json'),'utf8'));
 const pages=JSON.parse(fs.readFileSync(path.join(root,'pages.json'),'utf8'));
 const home=fs.readFileSync(path.join(root,'dist/index.html'),'utf8');
 const styleVersion=createHash('sha256').update(fs.readFileSync(path.join(root,'dist/assets/style.css'))).digest('hex').slice(0,12);
+const scriptVersion=createHash('sha256').update(fs.readFileSync(path.join(root,'dist/assets/site.js'))).digest('hex').slice(0,12);
 const canonical=home.match(/rel="canonical" href="([^"]+)"/)[1];
 const basePath=new URL(canonical).pathname.replace(/\/$/,'');
 assert.equal(data.people.length,38);
@@ -45,16 +46,26 @@ for(const code of ['ru','by','kz','uz','kg','tj','az','am','tm','ua','lt'])asser
 const style=()=>({setProperty(){},removeProperty(){}});
 const brand={style:style(),offsetHeight:250,parentElement:{getBoundingClientRect:()=>({top:100})}};
 const community={offsetHeight:500,getBoundingClientRect:()=>({top:1200})};
-const preference={matches:true,addEventListener(event,listener){this.listener=listener;}};
+const motionListeners=[];
+const preference={matches:true,addEventListener(event,listener){motionListeners.push(listener);},listener(){motionListeners.forEach(listener=>listener());}};
 let requestedFrames=0,cancelledAnimations=0,navOpen=false;
+let playCalls=0,rejectPlayback=false;
+const videoEvents=new Map(),toggleEvents=new Map(),visibilityEvents=new Map(),videoClasses=new Set(),videoLabel={textContent:''};
+const heroVideo={src:'',dataset:{src:'/assets/hero-classroom.mp4'},paused:true,error:null,
+  getAttribute(){return this.src||null;},addEventListener:(event,listener)=>videoEvents.set(event,listener),
+  classList:{add:name=>videoClasses.add(name),remove:name=>videoClasses.delete(name)},
+  play(){playCalls++;if(rejectPlayback)return Promise.reject(new Error('Autoplay blocked'));this.paused=false;videoEvents.get('playing')();return Promise.resolve();},
+  pause(){if(!this.paused){this.paused=true;videoEvents.get('pause')();}}
+};
+const videoToggle={hidden:true,setAttribute(){},classList:{toggle(){}},querySelector:()=>videoLabel,addEventListener:(event,listener)=>toggleEvents.set(event,listener)};
 const menuEvents=new Map(),menuAttributes=new Map([['aria-expanded','false']]);
 const menu={addEventListener:(event,listener)=>menuEvents.set(event,listener),getAttribute:key=>menuAttributes.get(key),setAttribute:(key,value)=>menuAttributes.set(key,value)};
 const navigation={addEventListener(){},classList:{toggle(name,on){navOpen=on;},remove(){navOpen=false;}}};
 const mobileMenuPreference={addEventListener(event,listener){this.listener=listener;}};
 const fakeDocument={
-  querySelector:selector=>selector==='[data-menu]'?menu:selector==='#navigation'?navigation:selector==='[data-brand-fade]'?brand:selector==='[data-community]'?community:selector==='.site-header'?{offsetHeight:80}:null,
+  querySelector:selector=>selector==='[data-menu]'?menu:selector==='#navigation'?navigation:selector==='[data-brand-fade]'?brand:selector==='[data-community]'?community:selector==='.site-header'?{offsetHeight:80}:selector==='[data-hero-video]'?heroVideo:selector==='[data-video-toggle]'?videoToggle:null,
   querySelectorAll:selector=>selector==='[data-flag]'?[{style:style(),dataset:{speed:1}}]:[],
-  addEventListener(){},fonts:{ready:Promise.resolve()},getAnimations:()=>[{cancel(){cancelledAnimations++;}}]
+  hidden:false,addEventListener:(event,listener)=>visibilityEvents.set(event,listener),fonts:{ready:Promise.resolve()},getAnimations:()=>[{cancel(){cancelledAnimations++;}}]
 };
 vm.runInNewContext(fs.readFileSync(path.join(root,'dist/assets/site.js'),'utf8').replace(/^export /gm,''),{
   document:fakeDocument,window:{scrollY:0,innerHeight:800,matchMedia:query=>query.includes('prefers-reduced-motion')?preference:mobileMenuPreference,addEventListener(){}},
@@ -63,11 +74,36 @@ vm.runInNewContext(fs.readFileSync(path.join(root,'dist/assets/site.js'),'utf8')
 await Promise.resolve();
 assert.equal(requestedFrames,0);
 assert.equal(brand.style.opacity,undefined);
+assert.equal(heroVideo.src,'','Reduced motion must not download the video');
+assert.equal(playCalls,0);
+assert.equal(videoToggle.hidden,true);
 preference.matches=false;preference.listener();
 assert.equal(requestedFrames,1);
+assert.equal(heroVideo.src,'/assets/hero-classroom.mp4');
+assert.equal(heroVideo.paused,false);
+toggleEvents.get('click')();
+assert.equal(heroVideo.paused,true);
+assert.equal(videoLabel.textContent,'Включить видеофон');
+fakeDocument.hidden=true;visibilityEvents.get('visibilitychange')();
+fakeDocument.hidden=false;visibilityEvents.get('visibilitychange')();
+assert.equal(playCalls,1,'Visibility changes must preserve a deliberate pause');
+toggleEvents.get('click')();
+assert.equal(heroVideo.paused,false);
 preference.matches=true;preference.listener();
 assert.equal(requestedFrames,1);
 assert.equal(cancelledAnimations,1);
+assert.equal(heroVideo.paused,true);
+assert.equal(videoClasses.has('is-ready'),false);
+assert.equal(videoToggle.hidden,true);
+rejectPlayback=true;preference.matches=false;preference.listener();
+await Promise.resolve();
+assert.equal(heroVideo.paused,true);
+assert.equal(videoToggle.hidden,false,'Blocked autoplay must offer manual playback');
+rejectPlayback=false;toggleEvents.get('click')();
+assert.equal(heroVideo.paused,false);
+heroVideo.error={code:4};videoEvents.get('error')();
+assert.equal(videoClasses.has('is-ready'),false,'A media error must restore the poster');
+assert.equal(videoToggle.hidden,true);
 menuEvents.get('click')();
 assert.equal(menuAttributes.get('aria-expanded'),'true');
 assert.equal(navOpen,true);
@@ -81,6 +117,8 @@ for(const p of pages){
   assert(!/href="#"/.test(html),p.route+' contains empty link');
   assert(html.includes('lang="ru"'));
   assert(html.includes(`/assets/style.css?v=${styleVersion}"`),p.route+' requires the current stylesheet version');
+  assert(html.includes(`/assets/site.js?v=${scriptVersion}"`),p.route+' requires the current script version');
+  assert.equal((html.match(/data-hero-video/g)||[]).length,p.route==='/'?1:0,'Video belongs only on the home page');
   assert.equal((html.match(/class="ambient-background" aria-hidden="true"/g)||[]).length,1,p.route+' requires one decorative backdrop');
   for(const [,href] of html.matchAll(/(?:href|src)="(\/[^"#]*)/g)){
     const clean=href.split(/[?#]/)[0];
