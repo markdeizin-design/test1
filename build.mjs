@@ -4,6 +4,10 @@ import {createHash} from 'node:crypto';
 
 const root = import.meta.dirname;
 const out = path.join(root, 'dist');
+const fontsVersion = createHash('sha256').update(fs.readFileSync(path.join(out,'assets/fonts.css'))).digest('hex').slice(0,12);
+const stylePath = path.join(out,'assets/style.css');
+const stylesheet = fs.readFileSync(stylePath,'utf8').replace(/@import url\('fonts\.css(?:\?v=[a-f0-9]+)?'\);/,`@import url('fonts.css?v=${fontsVersion}');`);
+fs.writeFileSync(stylePath,stylesheet);
 const styleVersion = createHash('sha256').update(fs.readFileSync(path.join(out,'assets/style.css'))).digest('hex').slice(0,12);
 const scriptVersion = createHash('sha256').update(fs.readFileSync(path.join(out,'assets/site.js'))).digest('hex').slice(0,12);
 const videoVersion = createHash('sha256').update(fs.readFileSync(path.join(out,'assets/hero-classroom.mp4'))).digest('hex').slice(0,12);
@@ -104,7 +108,7 @@ function documentRow(href,title,note,type='↗'){return `<a class="document-row"
 const curriculumNote=`<p class="notice">Ступени представлены по <a href="${official}/news/uchebnaya-programma-shkoly">официальной учебной программе от 16 августа 2022 года</a>; KG1–KG2 и 1–11 классы также перечислены в текущем разделе KHDA Fact Sheet. Содержание программы и набор в нужный класс уточняйте у администрации.</p>`;
 page('/education','Обучение','Подготовительные классы KG1–KG2, начальная, основная и старшая школа. Учебные материалы и аттестация.',
 head('Большой путь<br>начинается с любопытства','От подготовительных классов до завершения общего образования — на русском языке и по российским образовательным стандартам.','Обучение','Учебные ступени')+
-`<section class="section"><div class="container">${stages.map(s=>`<article class="stage-detail" id="${s.id}" data-reveal><div class="stage-number">${s.range}${s.id==='kg'?'':'<span style="display:block;font:12px var(--sans);margin-top:7px">КЛАССЫ</span>'}</div><div><h2>${s.name}</h2><p>${s.detail}</p>${link('/admissions#inquiry','Обсудить обучение')}</div></article>`).join('')}${curriculumNote}</div></section>
+`<section class="section"><div class="container">${stages.map(s=>`<article class="stage-detail" id="${s.id}" data-reveal><div class="stage-number">${s.range}${s.id==='kg'?'':'<span style="display:block;font:12px var(--body);margin-top:7px">КЛАССЫ</span>'}</div><div><h2>${s.name}</h2><p>${s.detail}</p>${link('/admissions#inquiry','Обсудить обучение')}</div></article>`).join('')}${curriculumNote}</div></section>
 <section class="section section-white"><div class="container intro-grid"><div>${photo(data.news[2].image,'Ученики школы за компьютерами на международном тестировании IBT','intro-image')}</div><div><div class="eyebrow">Язык и знания</div><h2>Учиться понимать мир</h2><p style="color:var(--muted);margin-top:23px">В коллективе школы представлены учителя русского, английского и арабского языков, математики, естественных и гуманитарных дисциплин, искусства и физической культуры.</p><p style="color:var(--muted)">Содержание занятий, нагрузку и дополнительные программы для вашего ребёнка можно обсудить со школой.</p>${link('/teachers','Познакомиться с учителями')}</div></div></section>
 <section class="section"><div class="container">${sectionHeading('Учебные материалы','Чтобы спланировать учебный год')}<div class="document-list">${documentRow(getDoc('raspisanie-predmetov-2026-2027').files[0].url,'Расписание предметов','2026–2027 учебный год · PDF','PDF')}${documentRow(getDoc('kalendar-2026-2027').files[0].url,'Школьный календарь','2026–2027 учебный год · PDF','PDF')}${documentRow(official+'/page/itogovaya-attestaciya','Итоговая аттестация','Официальная страница · Учебный год не указан')}${documentRow(official+'/news/uchebnaya-programma-shkoly','Учебная программа','Публикация от 16 августа 2022 · Содержание уточняйте в школе')}</div></div></section>${cta()}`);
 
