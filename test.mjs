@@ -2,11 +2,13 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import {createHash} from 'node:crypto';
 import {normalize,matchesTeacher,whatsappUrl,scrollProgress,scrollMotion} from './dist/assets/site.js';
 const root=import.meta.dirname;
 const data=JSON.parse(fs.readFileSync(path.join(root,'content.json'),'utf8'));
 const pages=JSON.parse(fs.readFileSync(path.join(root,'pages.json'),'utf8'));
 const home=fs.readFileSync(path.join(root,'dist/index.html'),'utf8');
+const styleVersion=createHash('sha256').update(fs.readFileSync(path.join(root,'dist/assets/style.css'))).digest('hex').slice(0,12);
 const canonical=home.match(/rel="canonical" href="([^"]+)"/)[1];
 const basePath=new URL(canonical).pathname.replace(/\/$/,'');
 assert.equal(data.people.length,38);
@@ -78,9 +80,10 @@ for(const p of pages){
   assert.equal((html.match(/<h1[ >]/g)||[]).length,1,p.route+' requires one h1');
   assert(!/href="#"/.test(html),p.route+' contains empty link');
   assert(html.includes('lang="ru"'));
+  assert(html.includes(`/assets/style.css?v=${styleVersion}"`),p.route+' requires the current stylesheet version');
   assert.equal((html.match(/class="ambient-background" aria-hidden="true"/g)||[]).length,1,p.route+' requires one decorative backdrop');
   for(const [,href] of html.matchAll(/(?:href|src)="(\/[^"#]*)/g)){
-    const clean=href.split('#')[0];
+    const clean=href.split(/[?#]/)[0];
     assert(clean.startsWith(basePath+'/') || clean===basePath,p.route+' link escapes site path: '+clean);
     assert(fs.existsSync(path.join(root,'dist',clean.slice(basePath.length))),p.route+' missing '+clean);
   }
